@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.b7ddc95f.chunk.css",
-    "main.js": "/static/js/main.e906e02e.chunk.js",
-    "main.js.map": "/static/js/main.e906e02e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.216bf3bc.js",
-    "runtime-main.js.map": "/static/js/runtime-main.216bf3bc.js.map",
-    "static/js/2.8cb8734f.chunk.js": "/static/js/2.8cb8734f.chunk.js",
-    "static/js/2.8cb8734f.chunk.js.map": "/static/js/2.8cb8734f.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.c48d9d5808a8a37379887bfd35014a9f.js": "/precache-manifest.c48d9d5808a8a37379887bfd35014a9f.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.b7ddc95f.chunk.css.map": "/static/css/main.b7ddc95f.chunk.css.map",
-    "static/js/2.8cb8734f.chunk.js.LICENSE.txt": "/static/js/2.8cb8734f.chunk.js.LICENSE.txt",
-    "static/media/header-bg.jpg": "/static/media/header-bg.fcc226ca.jpg",
-    "static/media/nodejs-logo.png": "/static/media/nodejs-logo.f5d8e6ae.png"
+    "main.css": "/build/static/css/main.b7ddc95f.chunk.css",
+    "main.js": "/build/static/js/main.14332a23.chunk.js",
+    "main.js.map": "/build/static/js/main.14332a23.chunk.js.map",
+    "runtime-main.js": "/build/static/js/runtime-main.d8b04666.js",
+    "runtime-main.js.map": "/build/static/js/runtime-main.d8b04666.js.map",
+    "static/js/2.4948e5ac.chunk.js": "/build/static/js/2.4948e5ac.chunk.js",
+    "static/js/2.4948e5ac.chunk.js.map": "/build/static/js/2.4948e5ac.chunk.js.map",
+    "index.html": "/build/index.html",
+    "precache-manifest.bd71ab7a65c65ad3050fd185c0c0a3f5.js": "/build/precache-manifest.bd71ab7a65c65ad3050fd185c0c0a3f5.js",
+    "service-worker.js": "/build/service-worker.js",
+    "static/css/main.b7ddc95f.chunk.css.map": "/build/static/css/main.b7ddc95f.chunk.css.map",
+    "static/js/2.4948e5ac.chunk.js.LICENSE.txt": "/build/static/js/2.4948e5ac.chunk.js.LICENSE.txt",
+    "static/media/header-bg.jpg": "/build/static/media/header-bg.fcc226ca.jpg",
+    "static/media/nodejs-logo.png": "/build/static/media/nodejs-logo.f5d8e6ae.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.216bf3bc.js",
-    "static/js/2.8cb8734f.chunk.js",
+    "static/js/runtime-main.d8b04666.js",
+    "static/js/2.4948e5ac.chunk.js",
     "static/css/main.b7ddc95f.chunk.css",
-    "static/js/main.e906e02e.chunk.js"
+    "static/js/main.14332a23.chunk.js"
   ]
 }
