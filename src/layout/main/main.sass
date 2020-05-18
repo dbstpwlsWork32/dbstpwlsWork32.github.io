@@ -1,0 +1,60 @@
+@import 'src/styles/css/variable.sass'
+  
+main
+  padding: pxToRem(40) 0
+.main
+  &__intro-card-wrapper
+    padding: pxToRem(20)
+    margin-bottom: pxToRem(40)
+    &:last-child
+      margin-bottom: 0
+    &__title
+      color: $text-em__bg-gray
+      text-align: center
+      padding: pxToRem(20) 0
+      font-weight: bold
+  &__intro-card, &__intro-card-image
+    padding: pxToRem(50) 0
+    border-bottom: 1px dashed #d4d4d4
+    &:last-child
+      border-bottom: none
+  &__intro-card-image
+    text-align: center
+    &__article
+      margin-bottom: pxToRem(40)
+      &:last-child
+        margin-bottom: 0
+    img
+      width: pxToRem(120)
+      margin: pxToRem(10)
+  &__intro-card
+    &__title
+      color: $text-em__bg-gray
+      margin-bottom: pxToRem(40)
+      &__border
+        border-bottom: 3px solid $blue
+    &__split-wrapper
+      margin-bottom: pxToRem(40)
+      &:last-child
+        margin-bottom: 0
+      &__text
+        margin-top: pxToRem(14)
+    &__split
+      position: relative
+      &__title-wrapper
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+      &__text-wrapper
+        padding-left: pxToRem(200)
+      &__title
+        color: $text-em__bg-gray
+      &__list
+        list-style: circle
+        li
+          margin-bottom: pxToRem(10)
+          &:last-child
+            margin-bottom: 0
+      &__text
+        margin-top: pxToRem(10)

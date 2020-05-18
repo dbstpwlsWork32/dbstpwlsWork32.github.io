@@ -1,0 +1,38 @@
+@import 'src/styles/css/variable.sass'
+
+header
+  overflow: hidden
+  width: 100%
+  height: 100vh
+  position: relative
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background: #00163e
+    z-index: -2
+
+.header
+  &__title
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    .text__title-1
+      line-height: 1.4em
+  &__clock
+    position: absolute
+    top: pxToRem(-75)
+    width: 100%
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      bottom: 0
+      width: 100%
+      height: 1px
+      background: #fff

@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react'
+import Main from './layout/main/main'
+import Header from './layout/header/header'
+import Footer from './layout/footer'
+import { ThemeProvider } from 'styled-components'
+import { theme } from './styles/variables'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends React.Component {
+  render () {
+    return (
+      <ThemeProvider theme={theme}>
+        <div id="app">
+          <Header />
+          <Main />
+          <Footer />
+        </div>
+      </ThemeProvider>
+    );
+  }
 }
-
-export default App;

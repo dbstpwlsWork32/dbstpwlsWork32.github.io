@@ -1,0 +1,89 @@
+@import './variable.sass'
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&display=swap')
+
+/* =========================== default tag setting */
+a
+  text-decoration: none
+  color: #296ade
+/* default tag setting =========================== */
+
+/* =========================== Typography */
+html
+  font-size: $rootRem + 0px
+  @include tablet
+    font-size: $rootRem - 4px
+  @include mobile
+    font-size: $rootRem - 6px
+html, body
+  font-family: 'Rajdhani', 'Noto Sans KR', sans-serif
+
+body
+  line-height: 1.2em
+  font-size: pxToRem(20)
+
+.text
+  &__title-1, &__title-2, &__title-3, &__caption
+    line-height: 1.2em
+.text__title-1
+  font-size: pxToRem(46)
+.text__title-2
+  font-size: pxToRem(34)
+.text__title-3
+  font-size: pxToRem(24)
+.text__caption
+  font-size: pxToRem(16)
+/* Typography =========================== */
+
+/* =========================== color */
+main, footer
+  background-color: $bg-gray
+  color: $text-normal__bg-gray
+
+.text__color-error
+  color: #de644e
+.text__color-em
+  color: $blue
+/* color =========================== */
+
+/* =========================== layout */
+header
+  z-index: -1
+main, footer
+  z-index: 1
+/* layout =========================== */
+
+/* =========================== modeul block */
+.b__content-box
+  max-width: pxToRem(1400)
+  padding: 0 pxToRem(10)
+  box-sizing: border-box
+  margin: 0 auto
+
+.text__center
+  text-align: center
+.text__white
+  color: #fff
+/* modeul block =========================== */
+
+
+footer
+  padding: pxToRem(60) pxToRem(40)
+  background: #fff
+  address
+    & > a
+      position: relative
+      margin-right: pxToRem(16)
+      &:after
+        content: ''
+        display: block
+        position: absolute
+        top: 2px
+        bottom: 2px
+        right: pxToRem(-8)
+        width: 1px
+        background: $text-normal__bg-gray
+      &:last-child:after
+        display: none
+    p
+      margin-bottom: pxToRem(10)
