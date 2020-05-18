@@ -93,7 +93,7 @@ const WellcomeText = aniStepDoms[3]
 const BackgroundImage = aniStepDoms[4]
 const Clock = aniStepDoms[5]
 
-export default class Header extends React.Component<{}, { scrollYPos: number }> {
+export default class Header extends React.Component {
   constructor (props: {}) {
     super(props)
 
@@ -102,25 +102,9 @@ export default class Header extends React.Component<{}, { scrollYPos: number }> 
     }
   }
 
-  componentDidMount () {
-    window.addEventListener('scroll', () => this.scrollEvent())
-  }
-
-  scrollEvent () {
-    if (window.scrollY > window.innerHeight) return false
-
-    this.setState({
-      scrollYPos: window.scrollY
-    })
-  }
-  
   render () {
-    const headerInlineStyle: React.CSSProperties = {
-      transform: `translateY(${this.state.scrollYPos}px)`
-    }
-
     return (
-      <header style={headerInlineStyle}>
+      <header>
         <Cutton />
         <div className="content-box text__center text__white header__title">
           <h1 className="text__title-1">
