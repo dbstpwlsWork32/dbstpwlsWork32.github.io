@@ -60,6 +60,20 @@ main, footer
   box-sizing: border-box
   margin: 0 auto
 
+.b__dialog
+  position: fixed
+  z-index: 10
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  padding: pxToRem(30) pxToRem(80)
+  background: #fff
+  &__close
+    position: absolute
+    padding: pxToRem(5) pxToRem(10)
+    right: 5px
+    top: 5px
+
 .text__center
   text-align: center
 .text__white
@@ -87,3 +101,8 @@ footer
         display: none
     p
       margin-bottom: pxToRem(10)
+  button
+    background: none
+    border: none
+    color: $text-normal__bg-blue
+    background: $blue
