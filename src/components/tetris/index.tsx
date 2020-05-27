@@ -35,7 +35,7 @@ interface TetrisData {
 }
 export default class Tetris extends React.PureComponent<TetrisData, TetrisState> {
 
-  gameBtHandler () {
+  gameBtHandler() {
     switch (this.state.gameStatus) {
       case 'play':
         this.setState({
@@ -43,6 +43,15 @@ export default class Tetris extends React.PureComponent<TetrisData, TetrisState>
         })
         break;
       default:
+        if (this.state.gameStatus === 'gameOver') {
+          this.setState({
+            scoreBoard: {
+              level: 1,
+              rows: 0,
+              score: 0
+            }
+          })
+        }
         this.setState({
           gameStatus: 'play'
         })
@@ -50,7 +59,7 @@ export default class Tetris extends React.PureComponent<TetrisData, TetrisState>
     }
   }
 
-  constructor (props: TetrisData) {
+  constructor(props: TetrisData) {
     super(props)
 
     const stageX = 10
@@ -62,7 +71,7 @@ export default class Tetris extends React.PureComponent<TetrisData, TetrisState>
         stage:
           props.stage ||
           Array.from(new Array(stageX), () => new Array(stageY).fill({ backgrond: '', settle: false })),
-        predictionBlocks: 
+        predictionBlocks:
           props.predictionBlocks ||
           [getBlock(), getBlock(), getBlock()],
         userBlock:
@@ -101,7 +110,7 @@ export default class Tetris extends React.PureComponent<TetrisData, TetrisState>
     this.gameOverEvent = this.gameOverEvent.bind(this)
   }
 
-  breakRowsEvent (breakRows: number): void {
+  breakRowsEvent(breakRows: number): void {
     // breakRows / (stage columns / 2) === +1 level
     const newBreakRows = this.state.scoreBoard.rows + breakRows
     const newScore = 10 * (11 * newBreakRows - 1)
@@ -115,13 +124,13 @@ export default class Tetris extends React.PureComponent<TetrisData, TetrisState>
       }
     })
   }
-  gameOverEvent () {
+  gameOverEvent() {
     this.setState({
       gameStatus: 'gameOver'
     })
   }
 
-  render () {
+  render() {
     return (
       <div>
         <Stage
